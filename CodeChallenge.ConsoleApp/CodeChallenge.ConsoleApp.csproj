@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CodeChallenge.ApiClient\CodeChallenge.ApiClient.csproj" />
+    <ProjectReference Include="..\CodeChallenge.Core\CodeChallenge.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -56,6 +56,8 @@ namespace CodeChallenge.ConsoleApp.Visualization
             {
                 int yPosition = 2 + startY + (chartHeight - 1) - (i * (chartHeight - 1) / divisions);
                 Console.SetCursorPosition(startX - 6, yPosition);
+                Console.Write(new string(' ', 6));
+                Console.SetCursorPosition(startX - 6, yPosition);
                 Console.Write($"{(increment * i):N2}");
             }
         }
@@ -96,6 +98,8 @@ namespace CodeChallenge.ConsoleApp.Visualization
 
                 Console.ResetColor();
 
+                Console.SetCursorPosition(xPosition, startY + chartHeight + 4 + (i * 2));
+                Console.Write(new string(' ', 5));
                 Console.SetCursorPosition(xPosition, startY + chartHeight + 4 + (i * 2));
                 Console.Write($"{actualRates[i]:N1}");
             }

@@ -15,7 +15,6 @@ namespace CodeChallenge.ConsoleApp.UI
 
         public UIManager()
         {
-            PromptForWindowSize();
             _menu = new CountrySelectionMenu(menuWidth);
             _barChart = new BarChart(chartHeight, chartStartX, chartStartY);
         }
@@ -27,7 +26,6 @@ namespace CodeChallenge.ConsoleApp.UI
 
         public void DrawBarChart(CountryDataModel country)
         {
-
             _barChart.ClearChartArea(country.UnemploymentStats.Count);
             _barChart.DrawBarChart(country);
         }

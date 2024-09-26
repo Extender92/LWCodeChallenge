@@ -42,6 +42,7 @@ namespace CodeChallenge.ConsoleApp
 
             do
             {
+                uiManager.PromptForWindowSize();
                 uiManager.DrawMenu(countries, selectedIndex);
                 uiManager.DrawBarChart(countries[selectedIndex]);
 
